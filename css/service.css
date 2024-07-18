@@ -1,0 +1,132 @@
+body,header,img,nav,main,div,section,footer,p{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+/* Style rule for body and header  */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #0f0331;
+  }
+  
+  header {
+    background-color: #0f0331;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .logo img {
+    text-align: center;
+    max-width: 160px;
+    height: auto;
+  }
+  
+  nav {
+    background-color: #0f0331;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+main{
+    background-color: #eae6e6; 
+   
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(17, 16, 16);
+    box-shadow: 0 0 10px rgba(134, 38, 38, 0.1);
+}
+.section {
+    margin-left: 2px;
+    margin-bottom: 30px;
+}
+h1 {
+     text-align: center;
+     color: #333;
+}
+h2{
+  color: #333;
+}
+.part-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.part-item {
+    margin-bottom: 5px;
+}
+footer {
+  background-color:grey;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin-top: auto; 
+}
+footer p {
+  margin: 5px 0; 
+}
+
+footer  {
+  color: #0066cc; 
+  text-decoration: none; 
+}
+
+footer:hover {
+  text-decoration: underline; 
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    /* For tablets and smaller desktops */
+    .container {
+        padding: 15px;
+    }
+    .part-list {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* For mobile devices */
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .part-list {
+        padding-left: 10px;
+    }
+}

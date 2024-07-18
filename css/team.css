@@ -1,0 +1,119 @@
+ /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        header {
+            background-color:  #0f0331;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        .logo img {
+            max-width: 160px;
+            height: auto;
+        }
+        
+        nav {
+            background-color:  #0f0331;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        
+        nav ul li a:hover {
+            background-color:  #0f0331;
+        }
+        
+        main {
+            padding: 20px;
+            background-color:#eae6e6 ;
+        }
+        
+        h1 {
+            text-align: center;
+            color:  #0f0331;
+        }
+        
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .team-member {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            overflow: hidden; /* Clearfix for floated elements */
+        }
+        
+        .team-member img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 10px;
+            float: left;
+        }
+        
+        /* Media queries */
+        @media (max-width: 767px) { /* Mobile */
+            .team-member img {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1115px) { /* Tablet */
+            .team-member img {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+        
+        @media (min-width: 1116px) { /* Desktop */
+            .team-member img {
+                float: left;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            background-color:  #0f0331;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }

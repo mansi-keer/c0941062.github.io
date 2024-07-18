@@ -4,7 +4,11 @@ filename:style.css
 */
 
 /*css reset*/
-
+body,header,img,nav,main,div,section,footer,p{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
 /* Style rule for body and header  */
 body{
   background-color:#f0f0f0;
@@ -16,50 +20,50 @@ header{
   margin-left: 0em;
   position: -webkit-sticky;
   position: sticky;
-  background-color: #b77578;
-  height:100px;
+  background-color: #0f0331;
 }
-.logo{
+.logo img {
+  text-align: center;
   margin:0 auto;
   padding-top: 2%;
   padding-left: 1%;
 }
 
-/*syle rule for navigation*/
 nav {
-  background-color:#b77578 ;
-  float: right;
-  margin:0;
-  width: 100%;
+  background-color: #0f0331;
+  text-align: center;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
-  text-align:center; 
+  margin: 0;
+  padding: 0;
 }
 
-nav li{
-  display:inline ;
-  padding: 1%;
-  border-top: none;
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-nav li a{
+nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 10px;
+  display: block;
 }
- 
+
+nav ul li a:hover {
+  background-color: #555;
+}
 /*style rules for main content*/
 
 main  {
-background-color: #f0f0f0;
+background-color: #eae6e6;
 }
-
-
 
 h1{
   text-align: center;
-  text-shadow: 1px 1px 2px rgb(201, 104, 104), 0 0 1em rgb(10, 10, 57), 0 0 0.2em rgb(4, 4, 14); /* Example shadow effect */
+  text-shadow: 1px 1px 2px rgb(42, 41, 84), 0 0 1em rgb(10, 10, 57), 0 0 0.2em rgb(22, 22, 70); /* Example shadow effect */
 }
 h3{
   text-align: center;
@@ -69,7 +73,7 @@ h3{
 border-radius: 10px;
 }
 #features {
-  background-color: #f8f8f8;
+  background-color: #eae6e6;
   padding: 40px 0;
 }
 
@@ -110,7 +114,7 @@ text-align: center;
 }
 
 .tel-link {
-background-color: #b77578;
+background-color: rgb(181, 178, 184);
 padding: 2%;
 margin: 0 auto;
 width: 80%;
@@ -120,7 +124,7 @@ border-radius: 5px;
 }
 
 .tel-link a {
-color: white;
+color: #333;
 text-decoration: none;
 font-size: 1.5em;
 display:block;
@@ -129,7 +133,7 @@ display:block;
 #contact-email-link{
 text-align: center;
 padding: 0%;
-color: #decfd0;
+color: #f4f0f0;
 text-decoration: none;
 font-weight: bold;
 }
@@ -143,6 +147,7 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 h2 {
 margin-bottom: 20px;
 color: #333;
@@ -203,32 +208,38 @@ p {
 color: #666;
 }
 /* Style rules for footer content */
-footer {
-  background-color: #b77578;
-  color: #fff;
+footer  {
   text-align: center;
-  padding:  20px;
-  margin-top: auto; /* Push the footer to the bottom */
-
+  background-color: grey;
+  color:black;
+  height: 80px;
+  padding:2px 2px;
+  margin-left:auto ;
+  margin-right: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-footer p {
-  margin: 5px 0; /* Margin around each paragraph */
-}
-
-footer a {
-  color: #0066cc; /* Link color */
-  text-decoration: none; /* Remove underline from links */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Underline links on hover */
+footer p{
+  background-color: grey;
+  color: black;
+  margin: auto;
 }
 /* Media Query for Tablet Viewport */
 
 @media (max-width: 768px) {
   header{
     display:flex;
+    background-color: #0f0331;
+    text-align:center ;
   }
+
+  .logo img {
+    text-align: center;
+    max-width: 160px;
+    height: auto;
+  }
+
 nav a {
   display: block;
   width: 100%;
@@ -258,6 +269,7 @@ margin: 2%;
 
 .mobile{
 display: block;
+
 }
 .tablet-desktop{
 display: none;
@@ -293,19 +305,18 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  background-color:  #0f0331;
   
 }
-.logo{
-border-radius: 2%;
-}
+
 
 nav a {
   font-size: 1.5em; /* Further increase font size for navigation links on very small screens */
 }
 
 main{
-  background-color: #ccc;
-  
+  background-color: #eae6e6;
+  margin: auto;
 }
  article {
   padding: 2%;
@@ -337,40 +348,12 @@ margin: 2%;
 }
 
 footer {
-  background-color: #b77578;
+  background-color: #0f0331;
   color: #fff;
   text-align: center;
   padding:20px;
   margin-top: auto;
   
-}
-}
-
-/*media query for desktop viewport*/
-@media(max-width:1475px){
-  header{
-    display: flex;
-    margin-left: 0em;
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: #b77578;
-    height:100px;
-}
-.logo {
-  margin-right: auto; /* Pushes the logo to the left */
-}
-nav li a :hover{
-  color:grey;
-  background-color: #e5e9fc;
-}
-/* Style rules for footer content */
-footer {
-  background-color: #b77578;
-  color: #fff;
-  text-align: center;
-  padding:  20px;
-  margin-top: auto; /* Push the footer to the bottom */
-
 }
 footer p {
   margin: 5px 0; /* Margin around each paragraph */
@@ -385,3 +368,42 @@ footer a:hover {
   text-decoration: underline; /* Underline links on hover */
 }
 }
+
+/*media query for desktop viewport*/
+@media(max-width:1475px){
+  header{
+    display: flex;
+    margin-left: 0em;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color:  #0f0331;
+    height:100px;
+}
+
+nav li a :hover{
+  color: #0f0331;
+  background-color: #e5e9fc;
+}
+/* Style rules for footer content */
+footer {
+  background-color: grey;
+  color: black;
+  text-align: center;
+  padding:  20px;
+  margin-top: auto; /* Push the footer to the bottom */
+
+}
+footer p {
+  margin: 5px 0; /* Margin around each paragraph */
+}
+
+footer a {
+  color:#0066cc; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+}
+
