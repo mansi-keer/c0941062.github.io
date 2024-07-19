@@ -29,11 +29,11 @@ nav {
 
 nav ul{
   list-style-type: none;
-  text-align:center; 
+  text-align: center; 
 }
 
 nav li{
-  display:inline ;
+  display: inline ;
   padding: 1%;
   border-top: none;
 }
@@ -58,7 +58,7 @@ p{
  text-align: center;
 }
 
-#training-table ,caption {
+#training-table,caption {
   padding:2px;
   width: 100%;
   border-collapse: collapse;

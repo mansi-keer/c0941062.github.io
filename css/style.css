@@ -103,7 +103,7 @@ border-radius: 10px;
   text-align: center;
 }
 
-#features li:before {
+#features li: before {
   content: "✓ ";
   color: #4CAF50;
 }
@@ -176,7 +176,7 @@ border-radius: 4px;
 cursor: pointer;
 font-size: 16px;
 }
-button:hover {
+button: hover {
 background-color: #45a049;
 }
 
@@ -230,9 +230,9 @@ footer p{
 
 @media (max-width: 768px) {
   header{
-    display:flex;
+    display: flex;
     background-color: #0f0331;
-    text-align:center ;
+    text-align: center ;
   }
 
   .logo img {
@@ -248,19 +248,19 @@ nav a {
   font-size: 1.5em; 
 }
 
-nav li a :hover{
-color:grey;
+nav li a : hover{
+color: grey;
 background-color: #e5e9fc;
 }
 
 #info, h1{
-float:left;
+float: left;
 width:100%;
 }
 
 #aroma, #blackdecker,#ee, #elite {
 width: 100%;
-display:flex;
+display: flex;
 flex-direction: column;
 padding:2%;
 margin: 2%;
@@ -312,7 +312,7 @@ header {
 
 
 nav a {
-  font-size: 1.5em; /* Further increase font size for navigation links on very small screens */
+  font-size 1.5em; /* Further increase font size for navigation links on very small screens */
 }
 
 main{
@@ -335,14 +335,14 @@ article ul{
 }
 #info, h1{
 padding: 1%;
-float:left;
+float: left;
 width:100%;
 
 }
 
 #aroma, #blackdecker,#ee, #elite {
 width: 100%;
-display:flex;
+display: flex;
 flex-direction: column;
 padding:2%;
 margin: 2%;
@@ -365,7 +365,7 @@ footer  {
   text-decoration: none; /* Remove underline from links */
 }
 
-footer :hover {
+footer : hover {
   text-decoration: underline; /* Underline links on hover */
 }
 }
@@ -381,7 +381,7 @@ footer :hover {
     height:100px;
 }
 
-nav li a :hover{
+nav li a : hover{
   color: #0f0331;
   background-color: #e5e9fc;
 }
@@ -403,7 +403,7 @@ footer  {
   text-decoration: none; /* Remove underline from links */
 }
 
-footer :hover {
+footer : hover {
   text-decoration: underline; /* Underline links on hover */
 }
 }
