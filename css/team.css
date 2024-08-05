@@ -1,4 +1,7 @@
- /* General styling */
+  /*Student Name:mansi keer
+File Name:team.css
+Date:5aug
+*/
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -69,7 +72,7 @@
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 1px solid #ddd;
-            overflow: hidden; /* Clearfix for floated elements */
+            overflow: hidden; 
         }
         
         .team-member img {
@@ -78,13 +81,12 @@
             margin-right: 10px;
             float: left;
         }
-        
-        /* Button to scroll to top */
+/* Button to scroll to top */
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none; /* Hidden by default */
+    display: none; 
     background-color: #555;
     color: #fff;
     border: none;
@@ -100,7 +102,7 @@
 
 /* Hide and show team members */
 .team-member {
-    display: none; /* Initially hide team members */
+    display: none; 
 }
 
 .toggle-btn {
@@ -116,53 +118,8 @@
 .toggle-btn:hover {
     background-color: #0056b3;
 }
+/* Media queries FOR mobile viewport show mobile class and hide tablet class adn menu links*/
 
-        /* Media queries FOR mobile viewport show mobile class and hide tablet class adn menu links*/
-
-        @media only screen and (min-width: 400px) ,print { 
-
-            .mobile{
-                display:block;
-            }
-            .tablet-desktop, #menu-links{
-                display:none;
-
-            }
-            .team-member img {
-                float: none;
-                margin-right: 0;
-                margin-bottom: 10px;
-                display: block;
-                margin: 0 auto 10px;
-            }
-            .mobile-nav a {
-                color: #fff;
-                font-family: 'Francois One',sans-serif;
-                text-align: center;
-                font-size: 2em;
-                text-decoration: none;
-                padding: 3%;
-                display: block;
-        }
-        .mobile-nav a.menu-icon {
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-    }
-}
-
-
-
-@media only screen and  (min-width: 768px) ,print { 
-    .tablet-desktop{
-            display:block;
-            }
-            .mobile , .mobile-nav{
-                display: none;
-            }
-
-        }
         @media (min-width: 1116px) { /* Desktop */
             .team-member img {
                 float: left;

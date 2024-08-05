@@ -1,5 +1,5 @@
 /* author:mansi keer
-date:18july
+date:5 aug 
 filename:style.css
 */
 
@@ -331,7 +331,7 @@ header {
 
 
 nav a {
-  font-size :1.5em; /* Further increase font size for navigation links on very small screens */
+  font-size :1.5em; 
 }
 
 main{
@@ -376,16 +376,15 @@ footer {
   
 }
 footer p {
-  margin: 5px 0; /* Margin around each paragraph */
+  margin: 5px 0;
 }
-
 footer  {
-  color: black /* Link color */
+  color: black 
 
 }
 
 footer :hover {
-  text-decoration: underline; /* Underline links on hover */
+  text-decoration: underline; 
 }
 }
 
@@ -398,19 +397,19 @@ footer {
   color: black;
   text-align: center;
   padding:  20px;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto; 
 
 }
 footer p {
-  margin: 5px 0; /* Margin around each paragraph */
+  margin: 5px 0; 
 }
 
 footer  {
-  color:black; /* Link color */
-  text-decoration: none; /* Remove underline from links */
+  color:black; 
+  text-decoration: none; 
 }
 
 footer :hover {
-  text-decoration: underline; /* Underline links on hover */
+  text-decoration: underline; 
 }
 }
