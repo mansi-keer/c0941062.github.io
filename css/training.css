@@ -3,46 +3,52 @@ File Name:training.css
 Date:5aug
 */
 body{
-  background-color:#f0f0f0;
   font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
  
 }
 header{
-  display: flex;
-  margin-left: 0em;
-  position: -webkit-sticky;
-  position: sticky;
-  background-color: #0f0331;
+  background-color:  #0f0331;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
  
 }
-.logo{
-  margin:0 auto;
-  padding-top: 2%;
-  padding-left: 1%;
+.logo img {
+  max-width: 160px;
+  height: auto;
 }
+
 
 /*syle rule for navigation*/
 nav {
   background-color:#0f0331 ;
-  float: right;
-  margin:0;
-  width: 100%;
+  text-align: center;
 }
 
 nav ul{
   list-style-type: none;
-  text-align: center; 
+  margin: 0;
+  padding: 0;
 }
 
-nav li{
+
+nav ul li{
   display: inline ;
-  padding: 1%;
-  border-top: none;
+  margin-right: 20px;
 }
 
-nav li a{
+nav ul li a{
   color: #fff;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: grey;
 }
 
 div{
